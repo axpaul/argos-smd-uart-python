@@ -18,16 +18,27 @@ The script acts as a lightweight command-line interface to:
 
 ### Arribada Wing ↔ FTDI USB-TTL Connection
 
+This project uses the **FTDI TTL-232RG-VREG3V3-WE** USB-to-UART cable to interface with the Arribada Argos SMD Wing module.
+
+- Provides a direct UART interface over USB
+- Operates at **3.3V logic level** (TTL)
+- Can supply up to **250 mA on VCC**
+- Includes integrated USB-to-Serial chip (FT232R)
+- Compatible with all major platforms (Windows, macOS, Linux)
+
 ![FTDI Wiring](Capture%20d’écran%202025-03-24%20165737.png)
 
 | Arribada Wing Pin | FTDI Cable Wire           | Description                      |
 |-------------------|---------------------------|----------------------------------|
 | `3V3`             | VCC (red)                 | Power supply (3.3V)              |
-| `TX`              | RX (yellow)               | UART transmission (Wing → PC)    |
-| `RX`              | TX (orange)               | UART reception (PC → Wing)       |
+| `TX`              | RX (yellow)               | UART TX (Wing → PC)    |
+| `RX`              | TX (orange)               | UART RX (PC → Wing)       |
 | `GND`             | GND (black)               | Ground / common reference        |
 
-> **Important:** The module operates at 3.3V logic only. Do not use 5V-level UART signals.
+> **Important:** Always verify voltage compatibility. This version provides 3.3V logic and power. Do not connect to 5V devices.
+
+You can find the complete technical documentation from FTDI here:  
+[FTDI TTL-232RG Cables – Datasheet (PDF)](https://www.ftdichip.com/Support/Documents/DataSheets/Cables/DS_TTL-232RG_CABLES.pdf)
 
 ---
 
