@@ -7,7 +7,7 @@ This demonstrator was developed at the **CNES (Centre National d'Études Spatial
 Although developed within CNES, this project is released as **open source** for the benefit of the scientific, maker, and educational communities.  
 Feel free to contribute, adapt, and extend it.
 
-> © 2025 CNES – Open source under MIT License.
+> © 2025 CNES – Open source under GPL-3.0 license.
 
 ## Overview
 
