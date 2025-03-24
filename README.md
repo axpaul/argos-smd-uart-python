@@ -1,5 +1,14 @@
 # Python Demonstrator – Arribada Argos SMD Module
 
+## Acknowledgements
+
+This demonstrator was developed at the **CNES (Centre National d'Études Spatiales)** – the French Space Agency – as part of internal testing and prototyping activities involving the **Arribada Argos SMD module**.
+
+Although developed within CNES, this project is released as **open source** for the benefit of the scientific, maker, and educational communities.  
+Feel free to contribute, adapt, and extend it.
+
+> © 2025 CNES – Open source under MIT License.
+
 ## Overview
 
 This project provides a Python-based script to test, configure, and communicate with the **Argos SMD module** developed by **Arribada Initiative**.  
