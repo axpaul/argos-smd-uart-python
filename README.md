@@ -35,7 +35,7 @@ This project uses the **FTDI TTL-232RG-VREG3V3-WE** USB-to-UART cable to interfa
 - Includes integrated USB-to-Serial chip (FT232R)
 - Compatible with all major platforms (Windows, macOS, Linux)
 
-![FTDI Wiring](Capture%20d’écran%202025-03-24%20165737.png)
+![FTDI Wiring](https://github.com/axpaul/argos-smd-uart-python/blob/main/Image/Synoptique.png)
 
 | Arribada Wing Pin | FTDI Cable Wire           | Description                      |
 |-------------------|---------------------------|----------------------------------|
