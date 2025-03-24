@@ -149,3 +149,15 @@ The script allows switching between modes and injecting the correct payload acco
 - Automatic parsing of TX_DONE and uplink timings
 - REST API or BLE passthrough for remote triggering
 
+## References & Resources
+
+- **Arribada Initiative** – Official site  
+  https://arribada.org
+
+- **Official Argos SMD Arduino Demo** – by Arribada  
+  The full Arduino-based demonstration for the Argos SMD module is available on GitHub:  
+  https://github.com/arribada/argos-smd-test-arduino
+
+This Python project offers a minimal command-line alternative to the Arduino-based demo, using direct serial AT commands and USB–UART connection.
+
+
