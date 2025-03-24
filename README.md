@@ -98,13 +98,38 @@ The script acts as a lightweight command-line interface to:
 
 ---
 
-## Example Payload for LDA2
+## Configuration Profiles & Payloads
 
-Valid Argos message payload for LDA2: **48 hexadecimal characters** (i.e., 24 bytes)
+The Argos SMD module supports multiple radio configurations, depending on the selected profile (LDA2, LDA2L, VLDA4, LDK).  
+Each mode expects a specific uplink message format and length (payload).
 
-```
-cafebabe0000000000000000000000000000000000000000
-```
+### Supported Radio Configurations (`AT+RCONF=...`)
+
+| Mode   | AT Command                                                           | Description                            |
+|--------|----------------------------------------------------------------------|----------------------------------------|
+| LDA2   | `AT+RCONF=44cd3a299068292a74d2126f3402610d`                         | Standard LDA2 profile (27 dBm)         |
+| LDA2L  | `AT+RCONF=bd176535b394a665bd86f354c5f424fb`                         | LDA2 Low-power variant (27 dBm)        |
+| VLDA4  | `AT+RCONF=efd2412f8570581457f2d982e76d44d7`                         | Very Low Data Rate (VLDA4, 22 dBm)     |
+| LDK    | `AT+RCONF=41bc11b8980df01ba8b4b8f41099620b`                         | Low Duty Cycle profile (short bursts)  |
+
+Use these commands to configure the radio mode before uplink transmissions.
+
+---
+
+### Typical Payloads by Configuration
+
+Each configuration expects a message of specific length:
+
+| Mode   | Payload Variable    | Example Payload                                          | Byte Length |
+|--------|---------------------|----------------------------------------------------------|-------------|
+| LDA2   | `TXpayload_LDA2`    | `cafebabe0000000000000000000000000000000000000000`       | 24 bytes    |
+| LDA2L  | `TXpayload_LDA2L`   | `000000000000000000000000000000000000000000000000`       | 24 bytes    |
+| LDK    | `TXpayload_LDK`     | `00000000000000000000000000000000000000`                 | 20 bytes    |
+| VLDA4  | `TXpayload_VLDA4`   | `000000`                                                 | 3 bytes     |
+
+> Note: Payloads must be provided as hexadecimal strings. The number of characters must match twice the byte length (e.g., 24 bytes → 48 hex characters).
+
+The script allows switching between modes and injecting the correct payload accordingly.
 
 ---
 
