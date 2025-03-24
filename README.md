@@ -159,6 +159,8 @@ The script allows switching between modes and injecting the correct payload acco
 |-----------------------|----------------------------------------------------|
 | `Serial-Argos-Demo.py`| Main Python script to test/configure the SMD module |
 | `argos_log.txt`       | Auto-generated log of all communication events     |
+| `Serial-Argos-Test-All-AT.py`| Main Python script to test all command |
+| `argos_log_test_command.txt`       | Auto-generated log of test communication events     |
 
 ---
 
