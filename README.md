@@ -55,7 +55,7 @@ You can find the complete technical documentation from FTDI here:
 
 - Automatic UART initialization
 - Radio configuration (e.g. LDA2 mode)
-- Periodic Argos uplink transmission (every 3 seconds)
+- Periodic Argos uplink transmission (every 60 seconds)
 - Response decoding with timestamp
 - AT error code interpretation
 - Interactive mode on keyboard interrupt
