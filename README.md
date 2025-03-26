@@ -120,7 +120,7 @@ You can find the complete technical documentation from FTDI here:
 
 ## Configuration Profiles & Payloads
 
-The Argos SMD module supports multiple radio configurations, depending on the selected profile (LDA2, LDA2L, VLDA4, LDK).  
+The Argos SMD module supports multiple radio configurations, depending on the selected profile (LDA2, VLDA4, LDK).  
 Each mode expects a specific uplink message format and length (payload).
 
 ### Supported Radio Configurations (`AT+RCONF=...`)
