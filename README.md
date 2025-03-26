@@ -127,10 +127,9 @@ Each mode expects a specific uplink message format and length (payload).
 
 | Mode   | AT Command                                                           | Description                            |
 |--------|----------------------------------------------------------------------|----------------------------------------|
-| LDA2   | `AT+RCONF=44cd3a299068292a74d2126f3402610d`                         | Standard LDA2 profile (27 dBm)         |
-| LDA2L  | `AT+RCONF=bd176535b394a665bd86f354c5f424fb`                         | LDA2 Low-power variant (27 dBm)        |
-| VLDA4  | `AT+RCONF=efd2412f8570581457f2d982e76d44d7`                         | Very Low Data Rate (VLDA4, 22 dBm)     |
-| LDK    | `AT+RCONF=41bc11b8980df01ba8b4b8f41099620b`                         | Low Duty Cycle profile (short bursts)  |
+| LDA2   | `AT+RCONF=3d678af16b5a572078f3dbc95a1104e7`                         | Standard LDA2 profile (27 dBm)         |
+| VLDA4  | `AT+RCONF=03921fb104b92859209b18abd009de96`                         | Very Low Data Rate (VLDA4, 22 dBm)     |
+| LDK    | `AT+RCONF=550b4bec21009c7a7b5bebaa937cdb41`                         | Low Duty Cycle profile (short bursts)  |
 
 Use these commands to configure the radio mode before uplink transmissions.
 
@@ -143,8 +142,7 @@ Each configuration expects a message of specific length:
 | Mode   | Payload Variable    | Example Payload                                          | Byte Length |
 |--------|---------------------|----------------------------------------------------------|-------------|
 | LDA2   | `TXpayload_LDA2`    | `cafebabe0000000000000000000000000000000000000000`       | 24 bytes    |
-| LDA2L  | `TXpayload_LDA2L`   | `000000000000000000000000000000000000000000000000`       | 24 bytes    |
-| LDK    | `TXpayload_LDK`     | `00000000000000000000000000000000000000`                 | 20 bytes    |
+| LDK    | `TXpayload_LDK`     | `00000000000000000000000000000000000000`                 | 16 bytes    |
 | VLDA4  | `TXpayload_VLDA4`   | `000000`                                                 | 3 bytes     |
 
 > Note: Payloads must be provided as hexadecimal strings. The number of characters must match twice the byte length (e.g., 24 bytes → 48 hex characters).
