@@ -35,6 +35,9 @@ Liste complète des commandes AT pour le module SMD Argos (avec tailles approxim
 - AT+RCONF=bd176535b394a665bd86f354c5f424fb    : Configuration radio : LDA2L                        (~44 octets)
 - AT+RCONF=efd2412f8570581457f2d982e76d44d7    : Configuration radio : VLDA4                        (~44 octets)
 - AT+RCONF=41bc11b8980df01ba8b4b8f41099620b    : Configuration radio : LDK                          (~44 octets)
+- AT+RCONF=3d678af16b5a572078f3dbc95a1104e7    : Configuration radio : LDA2                         (~44 octets)
+- AT+RCONF=03921fb104b92859209b18abd009de96    : Configuration radio : LDK                          (~44 octets)
+- AT+RCONF=550b4bec21009c7a7b5bebaa937cdb41    : Configuration radio : VLDA4                        (~44 octets)
 """
 
 import serial
