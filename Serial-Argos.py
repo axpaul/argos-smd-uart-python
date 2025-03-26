@@ -48,7 +48,7 @@ from datetime import datetime
 SERIAL_PORT = 'COM6'       # À adapter à votre système
 BAUD_RATE = 9600
 TIMEOUT = 2   
-TX_INTERVAL = 3  # secondes
+TX_INTERVAL = 60  # secondes
 
 # Liste des codes d’erreur +ERROR=XX retournés par le module SMD
 ERROR_CODES = {
